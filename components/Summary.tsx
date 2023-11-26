@@ -36,6 +36,8 @@ const Summary = () => {
         const data = await response;
         const checkOutUrl = data.data.url
 
+        toast.loading('Redirecting...');
+
         window.location = checkOutUrl
     };
 
